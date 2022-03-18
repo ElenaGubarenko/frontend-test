@@ -1,0 +1,57 @@
+.ShowModal {
+  /* opacity: 1; */
+  display: block;
+}
+
+.CloseModal {
+  display: none;
+}
+
+.ModalBack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-color: rgba(0, 9, 17, 0.8);
+
+}
+
+.ModalText {
+  font-size: 14px;
+
+}
+
+.ModalContent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+width: 380px;
+height: 170px;
+font-weight: bold;
+background-color: #FFFFFF;
+border-radius: 7px;
+}
+
+.ButtonModal {
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  border-radius:3px ;
+  background-color: #E0E0E0;
+  outline: none;
+  border: none;
+}
+
+.ButtonModal:hover {
+  background-color: #0CB4F1;
+  color: white;
+}
+
+.ButtonModal:last-child {
+margin-left: 20px;
+}

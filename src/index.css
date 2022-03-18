@@ -1,0 +1,13 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F7F7F7;
+}
+
+button {
+  transition-property: color, background-color;
+  transition-duration: 300ms;
+}
+
+button:hover {
+  color: #0CB4F1;
+}

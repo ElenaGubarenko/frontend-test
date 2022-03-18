@@ -1,0 +1,187 @@
+:root {
+   --main-color: #333333;
+   --bg-color: #F7F7F7;
+   --bg-input-div-color: #FFFFFF;
+   --username-color: #0CB4F1;
+   --search-input-color: #ECEFF0;
+   --secondary-color: #9EAAB4;
+   --table-border: rgba(0, 0, 0, 0.25);
+   --accent-color: #0CB4F1;
+   --table-text-color: #ACACAC;
+}
+
+.Title {
+   font-size: 24px;
+   font-weight: bold;
+   color: var(--main-color);
+   margin-top: 12px;
+   margin-bottom: 20px;
+}
+
+.SearchInputDiv {
+   display: flex;
+   flex-direction: column;
+  align-items: left;
+   height: 102px;
+   background-color: var(--bg-input-div-color);
+   padding-top: 12px;
+   padding-left: 15px;
+   border-radius: 7px;
+   box-shadow:  0px 20px 15px 0px rgba(0, 0, 0, 0.2) ;
+   margin-bottom: 72px;
+}
+
+.SearchInput {
+       width: 90%;
+   height: 34px;
+padding-left: 30px;
+padding-right: 30px;
+margin: 0;
+padding-bottom: 9px;
+padding-top: 9px;
+border-radius: 4px;
+border: none;
+outline: none;
+background-color: var(--search-input-color);
+
+}
+
+.SearchInputLabel {
+ position: relative;
+ /* width: 93%; */
+}
+
+.placeholder {
+    font-size: 12px;
+   font-weight: normal;
+   line-height: 16px;
+   color: var(--main-color);
+}
+
+.SvgSearch {
+   position: absolute;
+   top: 14px;
+   left: 4px; 
+    width: 24px;
+   height: 24px;
+}
+
+.ClearButton {
+   position: relative;
+width: 150px;
+height: 30px;
+font-size: 12px;
+line-height: 16px;
+padding: 5px;
+text-align: center;
+background-color: inherit;
+border: none;
+outline: none;
+cursor: pointer;
+}
+
+.SvgClean {
+   position: absolute;
+top: 5px;
+left: 5px;
+}
+
+.SortingDiv {
+   display: flex;
+   align-items: center;
+   margin-bottom: 15px;
+}
+
+.SortingTekst {
+   font-size: 14px;
+   font-style: normal;
+   color: var(--secondary-color);
+}
+
+.SortingButton{
+   cursor: pointer;
+   padding: 0;
+   margin-left: 10px;
+   margin-top: 
+   4px;
+   width: 140px;
+   height: 20px;
+outline: none;
+background-color: inherit;
+border: none;
+border-bottom: dotted;
+   font-size: 14px;
+   font-style: normal;
+   color: var(--secondary-color);
+}
+
+.SortingRating {
+   width: 70px;
+}
+
+.Table {
+   background-color: var(--bg-input-div-color);
+   border-radius: 7px;
+}
+
+table {
+   -webkit-border-horizontal-spacing: 0px;
+   -webkit-border-vertical-spacing: 0px;   
+   padding-right: 16px;
+   padding-left: 16px;
+   margin-bottom: 15px;
+}
+
+th {
+    background-color: var(--bg-input-div-color);
+    border-radius: 7px;
+    font-size: 14px;
+   font-style: normal;
+   font-weight: normal;
+   color: var(--secondary-color);
+   padding-top: 20px;
+   padding-bottom: 20px;
+   text-align: left;
+   /* padding-left: 16px; */
+}
+
+td {
+   border-top: 1px solid var(--table-border);
+padding-top: 20px;
+   padding-bottom: 20px;
+    
+}
+
+.UserName {
+color: var(--accent-color);
+font-weight: bold;
+}
+
+.UserData {
+   color: var(--table-text-color);
+   font-weight: medium;
+}
+
+.DeleteButton {
+   background-color: inherit;
+   border: none;
+   outline: none;
+   cursor: pointer;
+}
+
+.PaginateButtonsDiv {
+display: flex;
+justify-content: center;
+margin-bottom: 15px;
+}
+
+.PaginateButton {
+margin-right: 3px;
+cursor: pointer;
+border-radius: 50%;
+background-color: var(--bg-color);
+outline: none;
+border: 1px solid var(--main-color);
+width: 30px;
+height: 30px;
+}
