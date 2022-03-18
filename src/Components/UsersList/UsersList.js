@@ -128,29 +128,33 @@ export default function UsersList() {
           <th></th>
         </tr>
 
-        {filteredUsers.map((user) => (
-          <tr>
-            <td className={styles.UserName} key={user.username}>
-              {user.username}
-            </td>
-            <td className={styles.UserData} key={user.email}>
-              {user.email}
-            </td>
-            <td className={styles.UserData} key={user.registration_date}>
-              {`${user.registration_date.split("T")[0].split("-")[2]}.${user.registration_date.split("T")[0].split("-")[1]}.${
-                user.registration_date.split("T")[0].split("-")[0].split("")[2] + user.registration_date.split("T")[0].split("-")[0].split("")[3]
-              }`}
-            </td>
-            <td className={styles.UserData} key={user.rating}>
-              {user.rating}
-            </td>
-            <td>
-              <button className={styles.DeleteButton} onClick={() => handleModal(user.id)}>
-                X
-              </button>
-            </td>
-          </tr>
-        ))}
+        {users.length === 0 ? (
+          <p className={styles.Loading}>Загружаем список пользователей...</p>
+        ) : (
+          filteredUsers.map((user) => (
+            <tr>
+              <td className={styles.UserName} key={user.username}>
+                {user.username}
+              </td>
+              <td className={styles.UserData} key={user.email}>
+                {user.email}
+              </td>
+              <td className={styles.UserData} key={user.registration_date}>
+                {`${user.registration_date.split("T")[0].split("-")[2]}.${user.registration_date.split("T")[0].split("-")[1]}.${
+                  user.registration_date.split("T")[0].split("-")[0].split("")[2] + user.registration_date.split("T")[0].split("-")[0].split("")[3]
+                }`}
+              </td>
+              <td className={styles.UserData} key={user.rating}>
+                {user.rating}
+              </td>
+              <td>
+                <button className={styles.DeleteButton} onClick={() => handleModal(user.id)}>
+                  X
+                </button>
+              </td>
+            </tr>
+          ))
+        )}
       </table>
       <div className={styles.PaginateButtonsDiv}>
         {pages.map((page) => (
