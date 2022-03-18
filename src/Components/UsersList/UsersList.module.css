@@ -104,7 +104,7 @@ left: 5px;
    margin-left: 10px;
    margin-top: 
    4px;
-   width: 140px;
+   width: 120px;
    height: 20px;
 outline: none;
 background-color: inherit;
@@ -115,8 +115,18 @@ border-bottom: dotted;
    color: var(--secondary-color);
 }
 
+.SortingButton:focus {
+   color: var(--main-color
+   );
+}
+
+.SortingButton:hover {
+   color: var(--main-color
+   );
+}
+
 .SortingRating {
-   width: 70px;
+   width: 50px;
 }
 
 .Table {
@@ -129,7 +139,7 @@ table {
    -webkit-border-vertical-spacing: 0px;   
    padding-right: 16px;
    padding-left: 16px;
-   margin-bottom: 15px;
+   margin-bottom: 30px;
     box-shadow:  0px 20px 15px 0px rgba(0, 0, 0, 0.2) ;
 }
 
@@ -143,7 +153,6 @@ th {
    padding-top: 20px;
    padding-bottom: 20px;
    text-align: left;
-   /* padding-left: 16px; */
 }
 
 td {
@@ -185,4 +194,14 @@ outline: none;
 border: 1px solid var(--main-color);
 width: 30px;
 height: 30px;
+}
+
+.PaginateButton:hover {
+   background-color: var(--accent-color);
+   color: white;
+}
+
+.PaginateButton:focus {
+   background-color: var(--accent-color);
+   color: white;
 }

@@ -9,5 +9,5 @@ button {
 }
 
 button:hover {
-  color: #0CB4F1;
+  color: var(--accent-color);
 }
